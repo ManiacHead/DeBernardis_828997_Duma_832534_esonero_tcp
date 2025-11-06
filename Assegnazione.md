@@ -209,7 +209,9 @@ I nomi delle città sono case-insensitive.
 ## Consegna
 
 - **Scadenza**: 28 novembre 2025, entro h. 23.59.59
-- **Form di consegna**: [link](https://forms.gle/jwWg3y8zFaFUbH7g7)
+- **Form di prenotazione / consegna**: [link](https://forms.gle/jwWg3y8zFaFUbH7g7)
 - **Formato**: Link a repository GitHub accessibile pubblicamente
 - **Note**:
    - Una sola consegna per coppia
+ 
+_Ver. 1.0.0_
