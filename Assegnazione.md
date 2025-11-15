@@ -94,6 +94,7 @@ client-project.exe -r "t bari"        # da terminale Windows
 ./client-project -r "h invalid_city"  # da terminale Linux/macOS
 ./client-project -r "x roma"
 ```
+*Nota*: in caso di città con spazi (es., `-r "p Reggio Calabria"`), si assumerà che il primo carattere specificherà il `type` e tutto il resto sarà da considerarsi come `city`. 
 
 ### Esempi di Output
 
@@ -214,4 +215,4 @@ I nomi delle città sono case-insensitive.
 - **Note**:
    - Una sola consegna per coppia
  
-_Ver. 1.0.1_
+_Ver. 1.0.2_
