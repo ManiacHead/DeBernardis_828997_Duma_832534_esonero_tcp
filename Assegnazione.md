@@ -221,7 +221,10 @@ I nomi delle città sono case-insensitive.
 - **Scadenza**: 28 novembre 2025, entro h. 23.59.59
 - **Form di prenotazione / consegna**: [link](https://forms.gle/jwWg3y8zFaFUbH7g7)
 - **Formato**: Link a repository GitHub accessibile pubblicamente
+- **Risultati**: [link](https://collab-uniba.github.io/correzione_esonero_reti_tcp_itps_A-L_25-26/aggregate-report.html)
 - **Note**:
    - Una sola consegna per coppia
+   - Non è necessario ricompilare il form dopo aggiornamenti al repository di consegna
+   - La pagina dei risultati si aggiorna ogni 6h
  
-_Ver. 1.0.3_
+_Ver. 1.0.4_
