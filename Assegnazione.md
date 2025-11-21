@@ -220,11 +220,15 @@ I nomi delle città sono case-insensitive.
 
 - **Scadenza**: 28 novembre 2025, entro h. 23.59.59
 - **Form di prenotazione / consegna**: [link](https://forms.gle/jwWg3y8zFaFUbH7g7)
-- **Formato**: Link a repository GitHub accessibile pubblicamente
+- **Formato**: Link a repository GitHub accessibile pubblicamente e in uno dei seguenti formati:
+    - https://github.com/<github-id>/cognome_matricola_esonero_reti_tcp_itps_A-L_25-26
+    - https://github.com/<github-id>/cognome_matricola_esonero_reti_tcp_itps_A-L_25-26.git
+    - https://github.com/<github-id>/cognome1_matricola1_cognome2_matricola2_esonero_reti_tcp_itps_A-L_25-26
+    - https://github.com/<github-id>/cognome1_matricola1_cognome2_matricola2_esonero_reti_tcp_itps_A-L_25-26.git
 - **Risultati**: [link](https://collab-uniba.github.io/correzione_esonero_reti_tcp_itps_A-L_25-26/aggregate-report.html)
 - **Note**:
    - Una sola consegna per coppia
-   - Non è necessario ricompilare il form dopo aggiornamenti al repository di consegna
-   - La pagina dei risultati si aggiorna ogni 6h
+   - Non è necessario ricompilare il form di consegna dopo aggiornamenti al repository 
+   - La pagina dei risultati si aggiorna ogni 2h
  
-_Ver. 1.0.4_
+_Ver. 1.0.5_
