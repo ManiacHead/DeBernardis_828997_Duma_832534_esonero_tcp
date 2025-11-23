@@ -230,6 +230,6 @@ I nomi delle città sono case-insensitive.
 - **Note**:
    - Una sola consegna per coppia
    - Non è necessario ricompilare il form di consegna dopo aggiornamenti al repository 
-   - La pagina dei risultati si aggiorna ogni 2h
+   - La pagina dei risultati si aggiorna ogni ora
  
 _Ver. 1.0.6_
