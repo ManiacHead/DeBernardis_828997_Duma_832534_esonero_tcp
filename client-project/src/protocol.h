@@ -12,12 +12,21 @@
 #define SERVER_PORT 27015  // Server port (change if needed)
 #define BUFFER_SIZE 512    // Buffer size for messages
 
-// Function prototypes
-// Add here the signatures of the functions implemented by students
+#define MAX_CITY_LEN 64
 
-/*
- * Example function to implement:
- * int connect_to_server(const char* server_address);
- */
+//Prototipi
+void StampaInterfaccia(char* IP);
+
+//Strutture Dati
+typedef struct {
+    char type;
+    char city[MAX_CITY_LEN];
+} weather_request_t;
+
+typedef struct {
+    unsigned int status;
+    char type;
+    float value;
+} weather_response_t;
 
 #endif /* PROTOCOL_H_ */
