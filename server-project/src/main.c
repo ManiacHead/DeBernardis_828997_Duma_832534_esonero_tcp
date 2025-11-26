@@ -7,16 +7,28 @@
  * portable across Windows, Linux and macOS.
  */
 
+//Date Modified: 26 nov 2025
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "protocol.h"
+#include <time.h>
 
+
+int port;
 
 const char* supported_cities[] = {"Bari","Roma","Milano","Napoli","Torino","Palermo","Genova","Bologna","Firenze","Venezia"};
 
 
 int main(int argc, char *argv[]) {
-
+	srand(time(NULL));
+	if (argc == 3 && strcmp(argv[1], "-p") == 0){
+		port = atoi(argv[2]);
+	}
+	else
+	{
+		port = SERVER_PORT;
+	}
 	// TODO: Implement server logic
 
 #if defined WIN32
@@ -41,9 +53,9 @@ int main(int argc, char *argv[]) {
 	struct sockaddr_in sock_add;
 	sock_add.sin_family = AF_INET;
 	sock_add.sin_addr.s_addr = inet_addr( "127.0.0.1" );
-	sock_add.sin_port = htons(SERVER_PORT);
+	sock_add.sin_port = htons(port);
 
-	if(bind(my_socket, &sock_add, sizeof(sock_add)) < 0)
+	if(bind(my_socket, (struct sockaddr *)&sock_add, sizeof(sock_add)) < 0)
 	{
 		printf("bind() failed.\n");
 		closesocket(my_socket);

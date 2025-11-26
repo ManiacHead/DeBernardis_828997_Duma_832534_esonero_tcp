@@ -8,7 +8,7 @@
 #include <winsock.h>
 #endif
 #include <string.h>
-#include <ctype.h>s
+#include <ctype.h>
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/socket.h>
