@@ -42,11 +42,17 @@ char type = 0;
 char city[MAX_CITY_LEN];
 
 int main(int argc, char *argv[]) {
+
+	int server_port = SERVER_PORT;
 	 // Parsing argomenti
 	for (int i = 1; i < argc; i++) {
 		if (strcmp(argv[i], "-s") == 0 && i + 1 < argc)
 		{
 			ip = argv[++i];
+		}
+		else if (strcmp(argv[i], "-p") == 0 && i + 1 < argc)
+		{
+			server_port = atoi(argv[++i]);
 		}
 		else if(strcmp(argv[i], "-r") == 0 && i + 1 < argc)
 		{
@@ -87,9 +93,9 @@ int main(int argc, char *argv[]) {
     memset(&indirizzo_socket, 0, sizeof(indirizzo_socket));
     indirizzo_socket.sin_family = AF_INET;
     indirizzo_socket.sin_addr.s_addr = inet_addr(ip);
-    indirizzo_socket.sin_port = htons(SERVER_PORT);
+    indirizzo_socket.sin_port = htons(server_port);
 
-    printf("Connessione al server %s sulla porta %d...\n", ip, SERVER_PORT);
+    printf("Connessione al server %s sulla porta %d...\n", ip, server_port);
 
     // Connessione con il Server
     if (connect(my_socket, (struct sockaddr*)&indirizzo_socket, sizeof(indirizzo_socket)) < 0)
