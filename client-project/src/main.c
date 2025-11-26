@@ -7,6 +7,8 @@
  * portable across Windows, Linux and macOS.
  */
 
+//Date Modified: 26 nov 2025
+
 #if defined WIN32
 #include <winsock.h>
 #else
