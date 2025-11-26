@@ -6,7 +6,7 @@
  */
 #if defined WIN32
 #include <winsock.h>
-#endif
+#else
 #include <string.h>
 #include <ctype.h>
 #include <unistd.h>
@@ -16,6 +16,7 @@
 #include <netinet/in.h>
 #include <netdb.h>
 #define closesocket close
+#endif
 
 #ifndef PROTOCOL_H_
 #define PROTOCOL_H_
