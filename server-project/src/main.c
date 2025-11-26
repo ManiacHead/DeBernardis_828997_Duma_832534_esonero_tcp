@@ -29,7 +29,6 @@ int main(int argc, char *argv[]) {
 	{
 		port = SERVER_PORT;
 	}
-	// TODO: Implement server logic
 
 #if defined WIN32
 	// Initialize Winsock
